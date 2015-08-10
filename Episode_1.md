@@ -1,4 +1,4 @@
-Install from Package ---
+# Install from Package
 sudo apt-get update
 
 sudo apt-get install nginx
@@ -8,7 +8,7 @@ sudo apt-get remove --purge nginx* #remove Nginx
 
 
 
-Install from source —— 
+# Install from source 
 (This is the latest stable version as of right now. There are newer, development, versions)
 wget "http://nginx.org/download/nginx-1.8.0.tar.gz" 
 
@@ -32,15 +32,15 @@ sudo make install
 
 /usr/local/nginx/sbin/nginx -V # Check that it’s installed, and which version we have
 
-#Download nginx startup script
+#### Download nginx startup script
 wget -O init-deb.sh https://www.linode.com/docs/assets/660-init-deb.sh
 
 ( Alternate startup script: http://wiki.nginx.org/InitScripts )
 
-#Move script to the init.d directory and make executable
+#### Move script to the init.d directory and make executable
 sudo mv init-deb.sh /etc/init.d/nginx
 sudochmod +x /etc/init.d/nginx
 
-#Add nginx to the system startup
+#### Add nginx to the system startup
 sudo /usr/sbin/update-rc.d -f nginx defaults
 
