@@ -31,11 +31,11 @@ tar -zxvg nginx-1.8.0.tar.gz
 cd nginx-1.8.0
 ```
 
+#### Build tools
 ```
 sudo apt-get update
 ```
 
-#### Build tools
 ```
 sudo apt-get install build-essential
 ```
@@ -45,9 +45,10 @@ sudo apt-get install build-essential
 sudo apt-get install libpcre3-dev zlib1g-dev libssl-dev
 ```
 
-#### Enable SSL --with-http_ssl_module
-#### Forward real user IP (in a load balancer situation for example) --with-http_realip_module
-#### Enable nginx statistics (Like active connections and more) --width-http_stub_status_module
+
+###### Enable SSL --with-http_ssl_module
+###### Forward real user IP (in a load balancer situation for example) --with-http_realip_module
+###### Enable nginx statistics (Like active connections and more) --width-http_stub_status_module
 ```
 ./configure --with-http_ssl_module \
 		--with-http_realip_module \
