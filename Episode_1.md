@@ -24,7 +24,7 @@ wget "http://nginx.org/download/nginx-1.8.0.tar.gz"
 ```
 
 ```
-tar -zxvg nginx-1.8.0.tar.gz
+tar -zxvf nginx-1.8.0.tar.gz
 ```
 
 ```
