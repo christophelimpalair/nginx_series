@@ -76,3 +76,6 @@ Time to restart Nginx!
 ```
 sudo service nginx restart
 ```
+```
+curl test.com
+```
