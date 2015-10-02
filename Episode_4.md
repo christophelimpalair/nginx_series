@@ -76,8 +76,11 @@ ps aux | grep php-fpm
 ```
 
 **ps:** report a snapshot of the current processes
+
 **a:** shows all processes for all users
+
 **u:** show the process's user/owner
+
 **x:** shows processes not attached to a terminal
 
 Then, make your own configuration file:
@@ -104,7 +107,7 @@ https://scaleyourcode.com/blog/article/2
 
 (Search for it with ctrl+f)
 
-**Also note**: The default (www.conf) configuration file that comes with PHP5-FPM listens on the same socket, so you have to either move/delete that file or use a different socket, or else you will have a conflict and PHP-FPM won't work right.
+**Also note**: The default (/etc/php5/fpm/pool.d/www.conf) configuration file that comes with PHP5-FPM listens on the same socket, so you have to either move/delete that file or use a different socket, or else you will have a conflict and PHP-FPM won't work right.
 
 Good, now let's restart Nginx and PHP-FPM
 
