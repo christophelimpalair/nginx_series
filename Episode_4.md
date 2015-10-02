@@ -48,7 +48,7 @@ upstream backend {
 Create a PHP file at the **root** directory you chose. In this case, **/usr/share/nginx/test**
 
 ```
-sudo vim /usr/share/nginx/test
+sudo vim /usr/share/nginx/test/index.php
 ```
 
 ```
