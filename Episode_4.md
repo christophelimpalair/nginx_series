@@ -1,4 +1,6 @@
 #Nginx for dynamic PHP sites (with PHP-FPM)
+NOTE: PHP5-FPM is now pretty old, and you should be using PHP7-FPM or older, so just replace all the instances you see below of PHP5-FPM with your corresponding version.
+
 
 /etc/nginx/sites-available/test.com
 
@@ -43,6 +45,19 @@ upstream backend {
 
 	server backup1.example.com 			backup;
 }
+```
+Now create a symlink:
+
+```
+sudo ln -s /etc/nginx/sites-available/test.com /etc/nginx/sites-enabled/
+```
+
+Add test.com to your /etc/hosts on a new line
+
+```
+sudo vim /etc/hosts
+
+127.0.0.1 localhost test.com
 ```
 
 Create a PHP file at the **root** directory you chose. In this case, **/usr/share/nginx/test**
