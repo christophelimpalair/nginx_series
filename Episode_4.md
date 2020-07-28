@@ -26,7 +26,7 @@ server {
 	  try_files $uri =404; # OR Set cgi.fix_pathinfo=0 in php.ini (for security)
 	  fastcgi_pass backend; # OR unix:/var/run/php5-fpm.sock OR 127.0.0.1:9000
 	  fastcgi_index index.php; # appends index.php to a URI ending with a slash
-	  include fastcgi_params;
+	  include fastcgi.conf;
 	}
 
 }
